@@ -1,0 +1,14 @@
+{
+  "name": "Remove CF Problem Tags",
+  "version": "1.0",
+  "description": "Show Problem Tags only on click",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["http://codeforces.com/contest/*/problem/*"],
+      "js": ["background.js"]
+    }
+  ],
+  "permissions": ["http://codeforces.com/contest/*/problem/*"],
+  "web_accessible_resources": ["sample.css"]
+}
